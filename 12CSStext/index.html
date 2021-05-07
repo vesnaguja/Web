@@ -1,0 +1,66 @@
+<!--Browser-Safe Font Family
+●	Create a page with multiple paragraphs
+●	Apply different fonts to each of them
+●	Add a quote to each paragraph and define a different font for each quote
+
+
+Font size/weight/style
+●	Use HTML/CSS from the previous example
+●	Apply global font size/weight
+●	Override the global font for the first paragraph (apply some other font)
+●	Apply “oblique” style to the text in the second paragraph
+●	Create a span element somewhere inside the third paragraph
+●	Increase weight of the text inside the span and make it italic
+
+
+@font-face
+Take some time googling and find websites that provide fonts
+
+Downloading and including a font:
+○	Go to Google Fonts and download some font
+○	Include that font on page
+○	Apply the font to first paragraph
+
+Font via url from remote server:
+○	Go to Google Fonts and get the link for the font
+○	Include that font on the page using a link
+○	Apply the font to the page title
+
+
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./main.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Paragrafi</h1>
+
+    <p class="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. <q>Nihil atque ullam quia</q> dolore iusto,
+      totam ea quos officia maxime fuga aut ab distinctio nisi minima impedit facere adipisci soluta quam.</p>
+
+    <p class="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. <q>Nihil atque ullam</q>quia dolore iusto,
+      totam ea quos officia maxime fuga aut ab distinctio nisi minima impedit facere adipisci soluta quam.</p>
+
+    <p class="p3">Lorem ipsum dolor sit amet consectetur <span>adipisicing elit</span> . <q>Nihil atque ullam</q> quia
+      dolore iusto, totam ea quos officia maxime fuga aut ab distinctio nisi minima impedit facere adipisci soluta quam.
+    </p>
+
+    <p class="p4">Lorem ipsum dolor sit amet consectetur adipisicing elit. <q>Nihil atque ullam</q> quia dolore iusto,
+      totam ea quos officia maxime fuga aut ab distinctio nisi minima impedit facere adipisci soluta quam.</p>
+      
+  </div>
+</body>
+
+</html>

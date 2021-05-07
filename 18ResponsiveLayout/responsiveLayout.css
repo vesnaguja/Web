@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+header,
+nav,
+main {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+h2 {
+  text-align: center;
+  font-weight: 100;
+  margin: 20px 0px;
+}
+
+ul li {
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+  border: lightgray 1px solid;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+  height: 40px;
+  line-height: 40px;
+  vertical-align: middle;
+}
+
+
+li:hover {
+  background-color: rgb(66, 139, 202);
+  color: white;
+}
+
+header img,
+article {
+  display: block;
+  margin: 0 auto;
+  width: 90%;
+  border: lightgray 1px solid;
+  border-radius: 5px;
+  padding: 2%;
+  margin-bottom: 20px;
+}
+
+article img {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+}
+
+article p {
+  padding: 20px 0px 10px 0px;
+  text-align: center;
+}
+
+/*za tablet*/
+
+@media (min-width: 768px) {
+  header {
+    position: relative;
+  }
+
+  h2 {
+    float: left;
+    padding-left: 5%;
+  }
+
+  nav {
+    position: absolute;
+    top: 2%;
+    right: 3%;
+    width: 50%;
+    margin-right: 2%;
+    margin-top: 1%;
+  }
+
+  nav ul {
+    float: right;
+  }
+
+  ul li {
+    display: inline;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(66, 139, 202);
+    font-size: 16px;
+    height: 40px;
+    line-height: 40px;
+    vertical-align: middle;
+    padding: 10px;
+    margin: 5px 0 5px 5px;  
+  
+  }   
+
+  article {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    padding: 0;  
+
+  }
+
+  .image {
+    flex-basis: 38%;
+    padding: 0;
+    margin: 5px;
+  }
+
+  p {
+    font-size: 20px;
+    width: 60%;
+    text-align: center;
+    padding-left: 30px;
+  }
+}
+
+/*za desktop*/
+ @media (min-width: 992px) {
+
+  article p {
+    padding: 0px 5px 0px 5px;
+    display: block;
+    width: 100%;
+  }
+
+  article {
+    display: block;
+    float: left;
+    width: 32%;
+    border: none;
+  }
+  main {
+    padding-left: 4.5%;
+    padding-right: 1%;
+  }
+}
+

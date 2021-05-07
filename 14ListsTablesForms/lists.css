@@ -1,0 +1,42 @@
+/*Lists
+● Markers
+○ Create four lists (two unordered and two ordered lists)
+○ The first unordered list should have circles as item markers
+○ The second one (unordered) should use squares as markers
+○ The third one (ordered) should use upper alphabetics
+○ The last list (ordered) should use the Roman numbers
+● Image Marker/Position
+○ Create two additional unordered lists
+○ Set images as item markers for both of the lists
+○ Both lists should be 200px wide, and should have a lot of text in each
+item
+○ The markers in the second list should be inside a box
+*/
+
+.first {
+  list-style-type: circle;
+}
+
+.second {
+  list-style-type: square;
+}
+
+.third {
+  list-style-type: upper-alpha;
+}
+
+.forth {
+  list-style-type: upper-roman;
+}
+
+.fifth,
+.sixth {
+  list-style-image: url(https://png.pngtree.com/png-vector/20191113/ourmid/pngtree-green-check-mark-icon-flat-style-png-image_1986021.jpg);
+
+  width: 200px;
+}
+
+.sixth {
+  list-style-position: inside;
+}
+

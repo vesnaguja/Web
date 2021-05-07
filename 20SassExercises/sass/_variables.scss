@@ -1,0 +1,16 @@
+// Importing Other SASS Files
+// ●	Split all sass styles into main, variables and mixins
+// ●	The main scss file should include variables and mixins
+// ●	Run the transpiling process and include the transpiled style in the HTML page
+
+$color-body-bg: #212121;
+$color-h-borders-footer: white;
+$color-hbg: #d32f2f;
+$color-container-bg: #607d8b;
+$color-table: rgb(0, 0, 0);
+$color-table-bg: #757575;
+$color-even: #bdbdbd;
+
+$width-container: 960px;
+$width-table: 100%;
+$width-td: 300px;

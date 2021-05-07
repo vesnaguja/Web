@@ -1,0 +1,19 @@
+// Basics
+// ●	Create a simple HTML page with one paragraph
+// ●	Create a SCSS file and define style for that paragraph in it (bg and font size)
+// ●	Transpile the scss file to css file using sass (terminal command) --> sass basics.scss basics.css
+// ●	Include transpiled css file in the HTML page
+// ●	Change some style in scss file and figure out how to get that change to show on page 
+
+p {
+  background-color: blue;
+  font-size: 18px;
+  color: white;
+}
+
+// Basics with Watch Option
+// ●	Adapt the previous example to work with the watch option
+// ●	Create two directories “scss” and “css”
+// ●	In scss directory copy scss file from the previous exercise
+// ●	Start the transpiling process
+// ●	Make changes in the scss file and notice what is going on

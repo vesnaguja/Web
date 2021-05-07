@@ -1,0 +1,35 @@
+/*Line/Word/Letter Spacing (Challenge for students)
+●	Create a page with three paragraphs
+●	Spacing between characters in the first paragraph should be 5px
+●	Line height of the second paragraph is 200% of the original line height
+●	The third paragraph should not be styled
+
+*/
+
+.p1 {
+  letter-spacing: 5px;
+}
+
+.p2 {
+  line-height: 200%;
+}
+
+
+/*Alignment
+●	Align text in the previous examples:
+○	First paragraph to the left
+○	Second to the right
+○	Third should be centered
+*/
+
+.p1 {
+  text-align: left;
+}
+
+.p2 {
+  text-align: right;
+}
+
+.p3 {
+  text-align: center;
+}

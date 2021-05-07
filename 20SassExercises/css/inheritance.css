@@ -1,0 +1,14 @@
+.first, .second, .third {
+  border: 3px solid red;
+  background-color: grey;
+  padding: 10px;
+  width: 1193.33333px;
+}
+
+.second {
+  border-color: blue;
+}
+
+.third {
+  border-color: green;
+}

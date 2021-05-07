@@ -1,0 +1,92 @@
+/*Hide/Show | Box Shadows | Rounded Corners
+
+●	Hide/Show 
+○	Hide the middle paragraph from the previous example
+○	The third paragraph should be hidden
+
+●	Box Shadow
+○	Add a main title on the page using h1 element
+○	Set width of the title to 960px
+○	Position the heading box to the center of the page
+○	The text in the heading should be centered 
+○	Add top and bottom padding of 50px and do that for the top/bottom margins also
+○	Define box background color, and font color
+○	Include some fancy font for the title
+○	Apply box shadow to the heading box
+
+●	Rounded Corners
+○	Round the corners on the heading box (try different radiuses)
+*/
+
+@font-face {
+  font-family: "Dancing Script";
+  src: url(./fonts/Dancing_Script/DancingScript-VariableFont_wght.ttf);
+}
+
+p {
+  background-color: yellow;
+  border: 5px green solid;
+}
+
+.first,
+.third {
+  border: red dashed;
+}
+
+.first,
+.third {
+  padding: 50px;
+}
+
+.second {
+  padding-top: 50px;
+}
+
+.first {
+  width: 300px;
+  margin: 50px;
+}
+
+.second {
+  width: 400px;
+  /*horizontally centered on the screen with AUTO*/
+
+  /* margin-left: auto;
+  margin-right: auto; */
+  margin: 0 auto;
+}
+
+.third {
+  width: 200px;
+  margin-left: 100px;
+}
+
+p {
+  margin-right: 20px;
+  padding: 0;
+  display: inline-block;
+}
+
+
+/***************************************************/
+
+.second {
+  display: none;
+}
+.third {
+  visibility: hidden;
+}
+
+h1 {
+  width: 960px;
+  margin: 50px auto;
+  text-align: center;
+  padding: 50px 0;
+  background-color: seagreen;
+  color: white;
+  font-family: "Dancing Script";
+  -webkit-box-shadow: 20px 20px 20px 2px rgba(128, 128, 128, 1);
+  -moz-box-shadow: 20px 20px 20px 2px rgba(128, 128, 128, 1);
+  box-shadow: 20px 20px 20px 2px rgba(128, 128, 128, 1);
+  border-radius: 10px;
+}

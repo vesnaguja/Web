@@ -1,0 +1,217 @@
+<!--Applying CSS (Internal CSS)
+●	Download files from: https://bit.ly/3liwgML
+●	“styles.txt” file contains the style for the page
+●	Copy the styles from the “styles.txt” file to your HTML file
+●	Use the defined CSS classes and apply them to the appropriate element
+●	Don’t write any new CSS
+●	Page can be fully styled using only the provided classes
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* -----------Layout---------- */
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      background-color: #212121;
+    }
+
+    .container {
+      width: 960px;
+      margin: 20px auto;
+      border-top: 1px solid white;
+      border-bottom: 1px solid white;
+      background: #607D8B;
+    }
+
+    /* --------Hedings------- */
+
+    h1 {
+      padding: 20px 0;
+      text-align: center;
+      background: #D32F2F;
+      color: white;
+    }
+
+    h2 {
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      margin-bottom: 0px;
+      padding-left: 10px;
+      text-align: left;
+      background: #D32F2F;
+      color: white;
+    }
+
+    .title {
+      background-color: #D32F2F;
+
+    }
+
+    /* --------Content-------- */
+
+    img {
+      height: 400px;
+      margin: 40px auto 40px;
+      display: block;
+    }
+
+    table {
+      width: 100%;
+      color: rgb(0, 0, 0);
+      background: #757575;
+      border-collapse: collapse;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    }
+
+    tr {
+      border-bottom: 1px solid rgb(255, 255, 255);
+    }
+
+    td {
+      padding: 5px 0;
+    }
+
+    .even {
+      background-color: #BDBDBD;
+    }
+
+
+    td:first-child {
+      width: 300px;
+      padding-left: 10px;
+    }
+
+    p#footer {
+      margin-top: 100px;
+      color: white;
+      border-top: 1px solid white;
+      padding-top: 20px;
+    }
+
+    tr:first-child {
+      background-color: green;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Defrinol<sup>&#174;</sup> forte</h1>
+
+    <p>Defrinol forte je lek koji se koristi za ublažavanje zapušenosti nosa i sinusa, glavobolje, bola, zapaljenja,
+      povišene temperature i drugih simptoma prehlade i gripa. Tablete u sebi sadrže pseudoefedrin-hidrohlorid
+      koji je tzv. dekongestiv koji ublažava zapušenost nosa i sinusa i ibuprofen koji spada u grupu nesteroidnih
+      antiinflamatornih lekova i ublažava bol i glavobolju, smanjuje temperaturu i znakove zapaljenja.
+      Defrinol forte se primenjuje kod odraslih i dece starije od 12 godina</p>
+
+    <h2 class="title">Ibuprofen (400 mg)</h2>
+
+    <p>Ibuprofen je nesteroidni antiinflamatorni lek (NSAIL) koji smanjuje bol, snižava povišenu telesnu temperaturu i
+      uklanja znake zapaljenjskog procesa.</p>
+
+    <h2 class="title">Pseudoefedrin (60 mg)</h2>
+
+    <p>Pseudoefedrin-hidrohlorid je lek koji dovodi do sužavanja krvnih sudova (vazokonstrikcija) u sluznici nosa i na
+      taj način omogućava bolju prohodnost disajnih puteva.</p>
+
+    <img src="./images/Defrinol-forte.png" alt="Defrinol forte, film tablete">
+
+    <h1>Defrinol<sup>&#174;</sup></h1>
+
+    <p>DEFRINOL je lek koji pripada grupi nazalnih dekongestiva i predstavlja kombinaciju pseudoefedrin- hidrohlorida i
+      ibuprofena.</p>
+
+
+
+    <p>DEFRINOL se koristi za ublažavanje simptoma prehlade i gripa kao što su bolovi u mišićima, glavobolja, bol u
+      grlu, povišena telesna temperatura, začepljenost nosa i sinusa. </p>
+
+    <h2>Ibuprofen (200 mg)</h2>
+
+    <p>Ibuprofen je nesteroidni antiinflamatorni lek (NSAIL) koji smanjuje bol, snižava povišenu telesnu temperaturu i
+      uklanja znake zapaljenjskog procesa.</p>
+
+    <h2>Pseudoefedrin (30 mg)</h2>
+
+    <p>Pseudoefedrin-hidrohlorid je lek koji dovodi do sužavanja krvnih sudova (vazokonstrikcija) u sluznici nosa i na
+      taj način omogućava bolju prohodnost disajnih puteva.</p>
+
+
+
+    <img src="./images/Defrinol.png" alt="Defrinol, film tablete">
+
+    <h1>Defrinol<sup>&#174;</sup> sirup</h1>
+
+    <p> Lek Defrinol sadrži dve aktivne supstance pseudoefedrin-hidrohlorid i ibuprofen, i pripada grupi nazalnih
+      dekongestiva za sistemsku primenu. Pseudoefedrin-hidrohlorid je dekongestiv koji ublažava kongestiju
+      (zapušenost) nosa i sinusa, a ibuprofen je lek koji spada u grupu nesteroidnih antiinflamatornih lekova i
+      ublažava bol, smanjuje temperaturu i znakove zapaljenja.</p>
+
+    <p> Defrinol je lek koji se koristi za ublažavanje simptoma prehlade i gripa praćenih kongestijom nosa i sinusa,
+      uključujući bolove u mišićima, glavobolju, bol u grlu, povišenu telesnu temperaturu.</p>
+    <p> Koristite ovaj lek samo ukoliko imate zapušen nos i sinuse, praćeno glavoboljom, bolovima i/ili groznicom.
+      Ne uzimajte ovaj lek ukoliko imate samo jedan od ovih simptoma.</p>
+
+    <h2 class="title">Ibuprofen (100 mg/5 ml)</h2>
+
+    <p>Ibuprofen je nesteroidni antiinflamatorni lek (NSAIL) koji smanjuje bol, snižava povišenu telesnu temperaturu i
+      uklanja znake zapaljenjskog procesa.</p>
+
+    <h2 class="title">Pseudoefedrin (30 mg/5 mL)</h2>
+
+    <p>Pseudoefedrin-hidrohlorid je lek koji dovodi do sužavanja krvnih sudova (vazokonstrikcija) u sluznici nosa i na
+      taj način omogućava bolju prohodnost disajnih puteva.</p>
+
+
+    <img src="./images/defrinol-sirup.png" alt="Defrinol, sirup">
+
+
+    <table>
+      <tr>
+        <td></td>
+        <td>Defrinol forte</td>
+        <td>Defrinol</td>
+        <td>Defrinol sirup</td>
+      </tr>
+      <tr class="even">
+        <td>Ibuprofen</td>
+        <td>400 mg</td>
+        <td>200 mg</td>
+        <td>100 mg/5 ml</td>
+      </tr>
+      <tr>
+        <td>Pseudoefedrin</td>
+        <td>60 mg</td>
+        <td>30 mg</td>
+        <td>30 mg/5 ml</td>
+      </tr>
+      <tr class="even">
+        <td>Farmaceutski oblik</td>
+        <td>film tableta</td>
+        <td> film tableta</td>
+        <td>sirup</td>
+      </tr>
+      <tr>
+        <td>Uzrast</td>
+        <td>od 12 godina</td>
+        <td>od 12 godina</td>
+        <td>od 6 godina</td>
+      </tr>
+    </table>
+
+    <p id="footer">Pre upotrebe posavetujte se sa lekarom ili farmaceutom.</p>
+
+  </div>
+
+</body>
+
+</html>

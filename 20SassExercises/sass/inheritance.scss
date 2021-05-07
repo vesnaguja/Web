@@ -1,0 +1,25 @@
+// Inheritance and Operators
+// ●	Create a page with three paragraphs
+// ●	They should have the following border styles:
+// ○	The first one should have a red border
+// ○	The second one should have a blue border
+// ○	The third one should have a green border
+// ●	Use sass inheritance feature to create style for this page
+// ●	Use operators (+, -, /) to calculate widths of paragraphs
+
+.first {
+  border: 3px solid red;
+  background-color: grey;
+  padding: 10px;
+  width: 1200px-(10px*2)/3;
+}
+
+.second {
+  @extend .first;
+  border-color: blue;
+}
+
+.third {
+  @extend .first;
+  border-color: green;
+}

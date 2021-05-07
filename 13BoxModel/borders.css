@@ -1,0 +1,18 @@
+/*Borders
+●	Create three paragraphs on the page
+●	All of them should have a yellow background
+●	Each paragraph should have a 5px thick border
+●	The first and the last paragraphs should have red dashed borders
+●	The middle one should have green solid borders
+*/
+
+p {
+  background-color: yellow;
+  border: 5px green solid;
+}
+
+.first,
+.third {
+  border: red dashed;
+}
+

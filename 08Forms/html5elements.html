@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML5 elements</title>
+</head>
+
+<body>
+  <!--HTML5 elements (required, date, email, url, search)
+●	Create a form for Facebook posts scheduling
+●	The page should have one form that consists of elements, labels and a submit button
+●	It should have one required text field (Name)
+●	A field for date on which the post should be created
+●	A URL field for a website that will be used for the post
+●	A field that contains an email address to which an email is sent after publishing the post
+-->
+  <fieldset>
+    <legend>Facebook post scheduling</legend>
+    <form action="" method="POST">
+      <table border="0" >
+        <tr>
+          <td align="right">
+            <label for="name">Name:</label>
+          </td>
+          <td>
+            <input type="text" name="name" required> *
+          </td>
+        </tr>
+        <tr>
+          <td align="right">
+            <label for="date">Date:</label>
+          </td>
+          <td>
+            <input type="date" name="date" value="2021-03-06">
+          </td>
+        </tr>
+        <tr>
+          <td align="right">
+            <label for="website">Site:</label>
+          </td>
+          <td>
+            <input type="url" name="website">
+          </td>
+        </tr>
+        <tr>
+          <td align="right">
+            <label for="email">Email:</label>
+          </td>
+          <td>
+            <input type="email" name="email">
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" align="center">
+            <input type="submit" name="submit" value="Submit">
+          </td>
+        </tr>
+      </table>
+
+    </form>
+  </fieldset>
+</body>
+
+</html>

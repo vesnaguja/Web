@@ -1,0 +1,34 @@
+/*Shadow/Pseudo-Classes
+Create a page with a list of links to some websites
+
+Shadow
+●	Set the default color for that list
+●	Add text shadow to text of all the list elements
+
+Pseudo-Classes
+●	Each link that is not clicked yet should be red
+●	Each visited link should be black
+●	Hovering over text should make it green
+●	Clicking and holding the link should make it blue
+*/
+
+li {
+  color: purple;
+  text-shadow: -5px 0px 2px rgba(150, 150, 150, 0.59);
+}
+
+a:link {
+  text-decoration: red;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover {
+  color: green;
+}
+
+a:active {
+  color: blue;
+}

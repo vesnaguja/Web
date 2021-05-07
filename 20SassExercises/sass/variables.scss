@@ -1,0 +1,103 @@
+// Variables
+// ●	Take the “ID Card” project that we created in the first week (https://drive.google.com/drive/folders/0B_cry3I2R3q7SHJtX3lOVUgybXM)
+// ●	Apply style to it and use variables for colors and width
+
+@import 'variables';
+@import 'mixins';
+
+// Nesting
+// ●	Continue refactoring the ID Card project
+// ●	Rewrite styles using nesting
+// ●	If you have time, adapt it to use liquid design
+
+// Mixins
+// ●	Create mixins for text shadow
+// ●	Create mixins for box shadow
+// ●	Create a page with multiple elements
+// ●	Use the mixin for text shadow on one element
+// ●	For some other element, use the mixin for box shadow
+
+// Importing Other SASS Files
+// ●	Split all sass styles into main, variables and mixins
+// ●	The main scss file should include variables and mixins
+// ●	Run the transpiling process and include the transpiled style in the HTML page
+
+
+/* -----------Layout---------- */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: $color-body-bg;
+}
+
+.container {
+  width: $width-container;
+  margin: 20px auto;
+  border-top: 1px solid $color-h-borders-footer;
+  border-bottom: 1px solid $color-h-borders-footer;
+  background: $color-container-bg;
+}
+
+/* --------Hedings------- */
+
+h1 {
+  padding: 20px 0;
+  text-align: center;
+  background: $color-hbg;
+  color: $color-h-borders-footer;
+}
+
+h2 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin-bottom: 0px;
+  padding-left: 10px;
+  text-align: left;
+  background: $color-hbg;
+  color: $color-h-borders-footer;
+  @include text-shadow(4px 7px 2px rgba(43, 19, 11, 0.82));
+  .title {
+    background-color: $color-hbg;
+  }
+}
+
+/* --------Content-------- */
+
+img {
+  height: 400px;
+  margin: 40px auto 40px;
+  display: block;
+}
+
+table {
+  width: $width-table;
+  color: $color-table;
+  background: $color-table-bg;
+  border-collapse: collapse;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  tr {
+    border-bottom: 1px solid $color-h-borders-footer;
+    td {
+      padding: 5px 0;
+    }
+    td:first-child {
+      width: $width-td;
+      padding-left: 10px;
+    }
+  }
+
+  .even {
+    background-color: $color-even;
+  }
+}
+
+p#footer {
+  margin-top: 100px;
+  color: $color-h-borders-footer;
+  border-top: 1px solid $color-h-borders-footer;
+  padding-top: 20px;
+  @include box-shadow(5px 5px 15px 5px #000000);
+}

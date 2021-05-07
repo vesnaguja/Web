@@ -1,0 +1,46 @@
+/*Margins
+●	Use the previous example and add margins to each element
+●	The first should be 300px wide and should have 50px margins around all sides
+●	The second should be 400px wide and it should be horizontally centered on the screen
+●	The third one should be 200px wide and should have a 100px wide left margin
+*/
+
+p {
+  background-color: yellow;
+  border: 5px green solid;
+}
+
+.first,
+.third {
+  border: red dashed;
+}
+
+.first,
+.third {
+  padding: 50px;
+}
+
+.second {
+  padding-top: 50px;
+}
+
+/*******************************************/
+
+.first {
+  width: 300px;
+  margin: 50px;
+}
+
+.second {
+  width: 400px;
+  /*horizontally centered on the screen with AUTO*/
+
+  /* margin-left: auto;
+  margin-right: auto; */
+  margin: 0 auto;
+}
+
+.third {
+  width: 200px;
+  margin-left: 100px;
+}

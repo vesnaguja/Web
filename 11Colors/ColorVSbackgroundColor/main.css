@@ -1,0 +1,19 @@
+/*Color VS Background Color
+●	Use the structure created in the previous exercise
+●	Try to set different combinations of background and text colors on paragraphs
+*/
+
+p {
+  color: white;
+  background-color: black;
+}
+
+.p2 {
+  color: blanchedalmond;
+  background-color: cadetblue;
+}
+
+.p3 {
+  color: brown;
+  background-color: lightblue;
+}

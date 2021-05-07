@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <!--Table Basics
+●	Create a table containing phone specification data
+●	Each row should represent a new phone
+●	Content of the first column is the phone name
+●	The second column should contain the phone image (height of 100px)
+●	The third column should contain the amount of ram
+●	The fourth column should contain camera information
+●	The fifth column should contain info about internal memory
+●	Table should have at least three rows!
+●	Add column title for each column using th
+
+-->
+
+  <table border="1">
+    <!--Merging cells across rows
+        ●	Add a new column to the table
+        ●	Title of the column should be "External antenna"
+        ●	Merge all cells in this column into one cell except the column title
+        ●	Value inside the cell should be something like "NO"
+        
+        -->
+
+    <tr>
+      <th colspan="6">Specification</th>
+    </tr>
+
+    <tr>
+      <th>Phone name</th>
+      <th>Phone image</th>
+      <th>Amount of ram</th>
+      <th>Camera information</th>
+      <th>Internal memory</th>
+      <th>External antenna</th>
+    </tr>
+    <!--Merging cells across rows
+        ●	Add a new column to the table
+        ●	Title of the column should be "External antenna"
+        ●	Merge all cells in this column into one cell except the column title
+        ●	Value inside the cell should be something like "NO"
+        
+        -->
+    <tr>
+      <td>Samsung</td>
+      <td><img src="/images/samsung.png" alt="Samsung" height="100 px"></td>
+      <td>2 GB</td>
+      <td>multi-lens</td>
+      <td>256 GB</td>
+      <td rowspan="3">NO</td>
+    </tr>
+    <td>ZTE</td>
+    <td><img src="/images/zte.jpg" alt="ZTE" height="100 px"></td>
+    <td>2 GB</td>
+    <td>multi-lens</td>
+    <td>256 GB</td>
+    <tr>
+      <td>Huawei</td>
+      <td><img src="/images/huawei.jpg" alt="Huawei" height="100 px"></td>
+      <td>2 GB</td>
+      <td>multi-lens</td>
+      <td>256 GB</td>
+    </tr>
+
+  </table>
+
+  <!--Layout using table (centered column)
+●	Create a three column layout
+●	Center column should be 960px wide
+●	Center column should contain
+-	main title
+-	image (same width as column)
+-	multiple text paragraphs
+
+-->
+
+  <table border='1'>
+    <tr>
+      <td>Prva kolona</td>
+
+      <td width="960 px">Main title<img src="/images/background.jpg" alt=" mutne tackice" width="960 px">
+
+        <table border="1">
+          <tr>
+            <td>
+              <p>0. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti quae at neque. Molestias
+                repellat,
+                soluta
+                ab dolor eos eveniet, nemo adipisci nobis aliquam tenetur libero placeat ad sed impedit magnam!</p>
+            </td>
+
+            <td>
+              <p>1. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente cum dignissimos perferendis
+                facere
+                sit
+                consequatur expedita ex numquam tenetur quas. Dolorum vero quisquam eos sunt laudantium molestiae,
+                mollitia
+                ipsum illum!</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p>2. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti quae at neque. Molestias
+                repellat,
+                soluta
+                ab dolor eos eveniet, nemo adipisci nobis aliquam tenetur libero placeat ad sed impedit magnam!</p>
+            </td>
+
+            <td>
+              <p>3. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente cum dignissimos perferendis
+                facere
+                sit
+                consequatur expedita ex numquam tenetur quas. Dolorum vero quisquam eos sunt laudantium molestiae,
+                mollitia
+                ipsum illum!</p>
+            </td>
+          </tr>
+
+    </tr>
+  </table>
+
+  </td>
+
+  <td>Treca kolona</td>
+
+  </tr>
+  </table>
+
+</body>
+
+</html>

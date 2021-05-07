@@ -1,0 +1,27 @@
+/*Additional
+●	Create a table with five columns and three rows
+●	Each column should have different background color
+●	Colors of the first two columns should be defined using the following color names:
+○	AliceBlue
+○	HotPink
+*/
+
+.c1 {
+  background-color: aliceblue;
+}
+
+.c2 {
+  background-color: hotpink;
+}
+
+.c3 {
+  background-color: greenyellow;
+}
+
+.c4 {
+  background-color: salmon;
+}
+
+.c5 {
+  background-color: skyblue;
+}

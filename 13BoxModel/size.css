@@ -1,0 +1,35 @@
+/*Size
+●	Create a page containing two paragraphs.
+●	The first paragraph should have a yellow background
+●	The second paragraph should have a red background
+●	Add a lot of text to both of them
+
+●	Fixed size
+○	The first paragraph has width of 400px and height of 500px
+○	The second should have 600px width and 300px height
+○	Paragraph text should not overflow the box
+
+●	Dynamic size
+○	Max width of the first paragraph should be 300px
+○	Max height of the second one should be 200px
+○	The first paragraph text should be cut if it's bigger than the box
+○	The second paragraph text can overflow the paragraph (text can be bigger than the paragraph box)
+*/
+
+
+.first {
+  background-color: yellow;
+  width: 400px;
+  height: 500px;
+  overflow: hidden;
+  max-width: 300px;
+}
+
+
+.second {
+  background-color: red;
+  width: 600px;
+  height: 300px;
+  max-height: 200px;
+  overflow: visible;
+}

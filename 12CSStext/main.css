@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;400&display=swap');
+
+@font-face {
+  font-family: 'Chango';
+  src: url('fonts/Chango/Chango-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+
+body {
+  font-size: 20px;
+  font-weight: normal;
+}
+
+h1 {
+  font-family: 'Josefin Sans';
+  font-weight: 400;
+}
+
+/*.p1 {
+  font-family: 'Chango';
+  font-size: 2em;
+}*/
+
+.container:first-child {
+  font-family: 'Chango';
+  font-size: 2em;
+}
+
+.p1 q {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.p2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: oblique;
+
+
+.p2 q {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.p3 {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.p3 q {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+span {
+  font-weight: bold;
+  font-style: italic;
+}
+
+.p4 {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.p4 q {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+

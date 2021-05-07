@@ -1,0 +1,23 @@
+/*Opacity VS RGBA
+●	Use the previously created HTML structure
+●	Apply 50% opacity to the first element
+●	Set bg-color with 50% transparency (rgba) on the second element
+●	Add picture to the div element that has opacity defined
+●	Add picture to the div element that has rgba defined
+
+*/
+
+.p1 {
+  opacity: 50%;
+  background: center;
+  background-color: black;
+  color: white;
+}
+
+.p2 {
+  background-color: rgb(0, 0, 0, 0.5);
+}
+
+img {
+  padding: 20px 350px;
+}

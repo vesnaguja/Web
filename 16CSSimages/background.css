@@ -1,0 +1,26 @@
+/* Background
+●	Create a page with a main title
+●	Add a couple of subheadings
+●	After each subheading, add a single paragraph with some text
+●	The page should be long enough for the scrollbar to appear
+
+Repeat
+●	Find an image that can be included as a repeating image on the page
+●	Use that image to set a background image on the body element
+ */
+
+
+ body {
+   background-image: url(./images/depositphotos_14607371-stock-illustration-christmas-sparkling-seamless-vector.jpg);
+   /* background-repeat: repeat; */
+ }
+
+
+
+ /* Attachment
+●	Modify the previous example
+●	Prevent image from moving while the user scrolls down the page */
+
+body {
+  background-attachment: fixed;
+}

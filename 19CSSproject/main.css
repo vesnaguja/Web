@@ -1,0 +1,505 @@
+@font-face { 
+  font-family: 'Roboto';
+  src: url(./fonts/Roboto-Regular.ttf);
+}
+/* ========================================== 
+      GENERAL PROPERTIES
+  ============================================ */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+}
+.clearfix::after,
+.clearfix::before {
+  content: "";
+  display: block;
+}
+.clearfix::after {
+  clear: both;
+}
+/* ========================================== 
+      TOP-CONTAINER
+  ============================================ */
+.top-container {
+  margin: 0 auto;
+  text-align: center;
+}
+.logo {
+  color: rgb(119, 119, 119);
+  font-size: 50px;
+  margin: 45px 0px;
+}
+.span-logo {
+  border: 3px solid rgb(119, 119, 119);
+  color: rgb(255, 152, 1);
+  border-right-style: hidden;
+  margin-right: 2%;
+  padding: 0.1% 0% 0.1% 2%;
+}
+.navigation ul {
+  background-color: rgb(127, 194, 247);
+  width: 90%;
+  text-align: center;
+  margin: 10px auto;
+  list-style-type: none;
+}
+.navigation ul li {
+  padding: 30px 0px;
+}
+.navigation ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 400;
+}
+.header {
+  background-image: url(./images/banner3.jpg);
+  background-size: cover;
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+  background-color: coral;
+  padding: 100px 0px;
+}
+.header h1 {
+  padding: 45px 0px;
+  font-size: 40px;
+  font-weight: 600;
+  color: white;
+}
+.button {
+  border: 1px solid rgb(20, 110, 180);
+  border-radius: 50px;
+  background-color: rgb(20, 110, 180);
+  font-size: 25px;
+  color: white;
+  font-weight: 400;
+  padding: 18px 50px;
+}
+
+/*main css*/
+.section-1 {
+  margin: 40px 0px;
+}
+
+.simbol {
+  text-align: center;
+}
+
+.square {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid black;
+  margin: 0 2px;
+  transform: rotate(45deg);
+}
+
+.leva-crta {
+  display: inline-block;
+  width: 20%;
+  height: 11px;
+  border-top: 2px solid black;
+}
+
+.desna-crta {
+  display: inline-block;
+  width: 20%;
+  height: 11px;
+  border-top: 2px solid black;
+}
+
+.squeeze {
+  width: 90%;
+  padding: 5%;
+  margin: 0 auto;
+}
+
+.squeeze-2 {
+  width: 95%;
+  padding: 5%;
+  margin: 0 auto;
+}
+
+section h2 {
+  text-align: center;
+  font-size: 40px;
+}
+
+article h3 {
+  color: rgb(66, 155, 222);
+  font-size: 30px;
+  padding: 25px 0 8px 0;
+}
+
+article p {
+  padding: 20px 0;
+  font-size: 16px;
+}
+
+article ul {
+  list-style-type: none;
+  text-align: left;
+  padding: 0 10px;
+}
+
+article ul li {
+  color: rgb(119, 119, 119);
+  font-size: 16px;
+  padding: 10px 0;
+  text-align: left;
+}
+
+.article-2 {
+  margin-top: 35px;
+}
+
+.white-building {
+  width: 100%;
+}
+
+#image-marker {
+  list-style-image: url(./images/arrow_bullet.png); 
+  padding: 10px 10px 10px 20px;
+}
+
+article {
+  width: 100%;
+}
+
+
+.section-2 article {
+  background-color: rgb(127, 194, 247);
+  margin: 0 auto;
+  margin: 15px 0px;
+  padding: 20px 3%;
+}
+
+.section-2 h3 {
+  color: rgb(33, 33, 33);
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.section-2 img {
+  border-radius: 50%;
+  border: 3px solid white;
+  padding: 1%;
+  float: left;
+  width: 100px;
+  margin-right: 5%;
+}
+.section-2 p {
+  display: inline-block;
+  color: white;
+  font-size: 12px;
+  line-height: 25px;
+}
+
+.stars {
+  color: white;
+}
+
+/*get in touch with us sekcija 3*/
+
+.touch {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+}
+
+.social-media {
+  display: flex;
+  justify-content: space-around;
+}
+
+.section-3 article {
+  color: white;
+  width: 50%;
+  height: 250px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.section-3 h3 {
+  color: white;
+}
+
+.get-in-touch {
+  padding-top: 35px;
+}
+
+.get-in-touch h3 {
+  padding-bottom: 40px;
+}
+
+.contact-us img,
+.connect-us img {
+  width: 10%;
+}
+
+.contact-us {
+  background-color: rgb(44, 221, 152);
+}
+
+.connect-us {
+  background-color: rgb(255, 79, 129);
+}
+
+.address {
+  background-color: rgb(51, 105, 230);
+}
+
+.house {
+  background-color: rgb(127, 194, 247);
+}
+
+.house img {
+  padding-left: 10px;
+  padding-bottom: 20px;
+  height: 100%; 
+  width: 100%;
+}
+
+.iframe {
+  height: 350px;
+  width: 100%;
+}
+
+/*mail us sekcija*/
+
+.section-4 > div {
+  margin: 40px 0 20px 0;
+}
+
+.name,
+.email,
+.telephone,
+.message {
+  width: 100%;
+  color: rgb(134, 126, 120);
+  border-style: none;
+  border: 1px solid rgb(134, 126, 120);
+  padding: 20px;
+  margin: 10px 0;
+}
+
+.message {
+  height: 200px;
+}
+
+.submit {
+  background-color: rgb(255, 152, 1);
+  border-color: rgb(255, 152, 1);
+  color: white;
+  padding: 10px 20px;
+  border-style: none;
+  display: block;
+  margin-top: 20px;
+}
+
+/*footer*/
+
+footer {
+  background-color: rgb(33, 33, 33);
+  color: white;
+  height: 150px;
+  padding-top: 40px;
+
+}
+
+footer > ul {
+  text-align: center;
+}
+
+footer > ul > li {
+  list-style-type: none;
+  margin-bottom: 30px;
+  padding-right: 3px;
+  display: inline;
+  text-align: center;
+}
+
+footer > ul > li:last-child {
+  padding-right: 0px;
+}
+
+footer > ul > li > a {
+  text-decoration: none;
+  font-size: 14px;
+}
+
+footer > ul > li > a:visited {
+  color: white;
+}
+
+footer > p {
+  font-size: 14px;
+  text-align: center;
+  padding-top: 30px;
+}
+
+/*========================================== 
+  MEDIA QUERIES
+========================================== */
+/*========================================== 
+ /*  tablets, Ipads, horizontal landscapes screen  
+●	Tablet - 768px
+========================================== */
+@media screen and (min-width: 768px) {
+  .top-container {
+    background-image: url(./images/banner3.jpg);
+    background-size: cover;
+    position: relative;
+  }
+  .logo {
+    float: left;
+  }
+  .navigation ul {
+    background-color: rgba(127, 194, 247, 0);
+    float: right;
+    width: 50%;
+    padding-top: 45px;
+  }
+  .navigation ul li {
+    display: inline;
+  }
+  ul li a {
+    font-size: 16px;
+    font-weight: 200;
+    padding: 20px 10px;
+  }
+  .logo {
+    color: white;
+    font-size: 35px;
+    padding-left: 2%;
+  }
+  .span-logo {
+    border: solid 3px white;
+    color: rgb(255, 152, 1);
+    border-right-style: hidden;
+    margin-right: 5px;
+    padding-left: 10px;
+  }
+
+  .navigation ul {
+    background-color: rgba(127, 194, 247, 0);
+  }
+
+  /*who we are sekcija za tablet*/
+
+  .article-1 {
+    float: left;
+    width: 50%;
+  }
+
+  .article-2 {
+    float: left;
+    width: 50%;
+  }
+
+  article h3 {
+    font-size: 20px;
+  }
+
+  section {
+    margin: 40px 0px;
+  }
+
+  /*what people says za tablet*/
+
+  .section-2 article {
+    width: 47%;
+    float: left;
+    margin-right: 30px;
+  }
+
+  #jennifer {
+    margin-right: 0px;
+  }
+  /*get in touch*/
+  iframe {
+    min-width: 768px;
+  }
+  /*mail us*/
+
+  .input {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .name,
+  .email {
+    margin-right: 1%;
+  }
+
+  .submit {
+    border-radius: 5px;
+  }
+}
+
+/*========================================== 
+ /*  DESKTOP  
+	●	Desktop - 1200px
+========================================== */
+@media screen and (min-width: 1200px) {
+  /*who we are sekcija*/
+
+  .article-1,
+  .article-2,
+  .article-3 {
+    width: 33.3%;
+  }
+
+  .article-3 {
+    float: left;
+  }
+  .article-1,
+  .article-3 {
+    padding: 2%;
+  }
+
+  /*what people says za desktop*/
+
+  .section-2 article {
+    width: 31%;
+    float: left;
+    margin-right: 30px;
+  }
+
+  #jennifer {
+    margin-right: 30px;
+  }
+  #selena {
+    margin-right: 0px;
+  }
+  main .touch {
+    width: 100%;
+  }
+  .touch {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .section-3 article {
+    width: 25%;
+  }
+  iframe {
+    min-width: 1200px;
+  }
+
+  .submit {
+    border-radius: 0px;
+  }
+}

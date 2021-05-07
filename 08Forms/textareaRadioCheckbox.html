@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>School quiz</title>
+</head>
+
+<body>
+  <!--●	Textarea/Radio/Checkbox 
+    Create a page that simulates a school quiz, containing multiple questions:-->
+
+  <!--●	Radio
+    The first question should contain multiple options out of which the student can select only one-->
+
+  <form action="">
+    <ol>
+      <li> Which class of drugs Ibuprofen belongs to? <br>
+        <label><input type="radio" name="drug" value="analgesics">Analgesics</label>
+        
+        <input type="radio" name="drug" value="sedatives" id="sedatives">
+        <label for="sedatives">Sedatives</label>
+        <input type="radio" name="drug" value="antidepressants">Antidepressants
+      </li>
+      <!--●	The second quiz question has multiple options out of which the user can select several-->
+      <div>Ibuprofen is used for: <br>
+        <input type="checkbox" name="condition" value="pain">Pain
+        <input type="checkbox" name="condition" value="fever">Fever
+        <input type="checkbox" name="condition" value="dysmenorrhea">Dysmenorrhea
+        <input type="checkbox" name="condition" value="arthritis">Rheumatold Arthritis
+      </div> 
+      <!--●	The third question should require from user to insert some long text-->
+      <li>Write some adverse effects of ibuprofen that you are familiar with: <br>
+        <textarea name="comments" id="" cols="30" rows="5" placeholder="Adverse effects of ibuprofen are..."></textarea>
+      </li>
+    </ol>
+
+  </form>
+
+
+
+</body>
+
+</html>

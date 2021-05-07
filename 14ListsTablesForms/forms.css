@@ -1,0 +1,90 @@
+/*Forms | Cursor
+Form Elements Style
+
+○ Include the normalizer on page to unify default styles
+○ Style the form until it looks like the form shown in the picture
+● Cursor
+○ Set the cursor to look different when hovering over different form
+elements
+○ Use a custom image for the cursor when hovering over the submit
+button*/
+
+.container {
+  background-color: lightgray;
+  width: 450px;
+  height: 850px;
+  text-align: center;
+  align-content: center;
+  text-align: left;
+  padding: 40px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  vertical-align: middle;
+  margin: auto;
+}
+
+/*form {
+  display: inline-block;
+  margin: auto;
+} */
+
+h1 {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 500;
+}
+
+.title {
+  border-bottom: thin solid black;
+  margin-bottom: 50px;
+}
+
+.orange {
+  color: rgb(233, 163, 34);
+}
+
+label {
+  font-size: 30px;
+  padding: 10px;
+}
+
+input {
+  height: 30px;
+  width: 90%;
+  border-radius: 5px;
+  font-size: 20px;
+  border-color: lightgray;
+  display: block;
+  padding: 10px;
+  margin: 10px;
+}
+
+#submit {
+  background-color: rgba(184, 25, 25, 0.829);
+  color: white;
+  height: 40px;
+  width: 405px;
+  border-radius: 5px;
+}
+
+form {
+  
+  display: block;
+  margin: 10px;
+
+}
+
+/* ●	Cursor
+○	Set the cursor to look different when hovering over different form elements
+○	Use a custom image for the cursor when hovering over the submit button
+ */
+
+label:hover {
+  cursor: pointer;
+  
+}
+
+#submit:hover {
+  cursor: url(https://images.app.goo.gl/RMHnHA8BzHpBsSs29);
+}

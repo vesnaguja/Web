@@ -1,0 +1,33 @@
+/* Float    
+●	Create navigation
+○	Navigation should be implemented as unordered list
+○	Transform navigation using CSS to be in one line
+○	Navigation is floated to the right
+○	Width of navigation container is 960px
+ */
+
+ 
+
+ nav {
+   width: 960px;
+   background-color: rgb(200, 53, 47);
+   color: white;
+   float: right;
+   text-align: right;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   margin: 10px;
+   
+ }
+
+ 
+ li {
+   display: inline;
+   margin-right: 20px;
+   
+ }
+
+ a {
+   color: white;
+   text-decoration: none;
+
+ }

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Additional elements</title>
+</head>
+
+<body>
+  <!--Blog Exercise
+
+Home Page content
+●	Create a page with two columns
+●	Width of the left column is 300px
+●	Right column stretches to cover the rest of the screen
+-->
+
+
+  <table width="100%">
+
+
+    <!--●	Left column content
+○	Logo image with height set to 250px
+○	Under the logo, there should be a list of links
+○	One of the links should be "Contact"
+○	The link should link to "./contact.html" page
+
+-->
+    <tr>
+      <td width="300">Leva kolona
+        <div>
+          <img src="/images/background.jpg" title="logo image" height="250" alt="tackice">
+        </div>
+        <ul>
+          <li><a href="contact.html" target="_blank">Contact</a></li>
+          <li><a href="https://www.google.com/" target="_blank">Google</a></li>
+          <li><a href="https://www.youtube.com/" target="_blank">YT</a></li>
+        </ul>
+      </td>
+      <!--● Right column content
+      ● There should be two posts in form of groups
+      ● The first group content:
+      ○ Title
+      ○ Embedded YouTube video
+      ● The second group content:
+      ○ Title
+      ○ Video (HTML5) that you will find on the web
+      -->
+
+      <td>Desna kolona
+        <div>
+          <title>First group</title>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/8DYje57V_BY" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+        <div>
+          <title>Secong group</title>
+          <video src="http://sinovi.rs/videos/stankovic_i_sinovi_showreel.mp4" controls width="640" height="360">Video
+            from web</video>
+        </div>
+      </td>
+    </tr>
+  </table>
+</body>
+
+</html>

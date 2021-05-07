@@ -1,0 +1,26 @@
+/*Padding
+●	Use the previous example or create three new paragraphs with bg color
+●	Set padding for each paragraph
+●	The first and the third should have a 50px padding around all sides
+●	The middle one should have a 50px top padding only
+
+*/
+
+p {
+  background-color: yellow;
+  border: 5px green solid;
+}
+
+.first,
+.third {
+  border: red dashed;
+}
+
+.first,
+.third {
+  padding: 50px;
+}
+
+.second {
+  padding-top: 50px;
+}
