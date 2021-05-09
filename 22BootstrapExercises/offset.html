@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <script src="./js/bootstrap.bundle.min.js" defer></script>
+  <title>Offset</title>
+
+</head>
+
+<body>
+
+<!-- Offset 
+●	Create three rows 
+●	Columns in the first row don’t have any offset
+●	Columns in the second and third rows should have offset applied
+-->
+
+<div class="container">
+  <div class="row g-3 py-3">
+    <div class="col-4">
+      <div class="border p-3 bg-light rounded">1</div>
+    </div>
+    <div class="col-4">
+      <div class="border p-3 bg-light rounded">2</div>
+    </div>
+  </div>
+  <div class="row g-3 pb-3">
+    <div class="col-4">
+      <div class="border p-3 bg-light rounded">3</div>
+    </div>
+    <div class="col-4 offset-3">
+      <div class="border p-3 bg-light rounded">4 (offset 3)</div>
+    </div>
+  </div>
+  <div class="row g-3 pb-3">
+    <div class="col-4 offset-3">
+      <div class="border p-3 bg-light rounded">5 (offset 3)</div>
+    </div>
+    <div class="col-4 offset-1">
+      <div class="border p-3 bg-light rounded">6 (offset 1)</div>
+    </div>
+  </div>
+</div>
+
+</body>
+
+</html>

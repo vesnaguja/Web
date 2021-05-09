@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <script src="./js/bootstrap.bundle.min.js" defer></script>
+  <title>Nesting</title>
+  <style>
+    .visina {
+      height: 150px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <!-- prvi red -->
+    <div class="row gy-2">
+
+      <!-- kolona 1 -->
+      <div class="col-3 p-2">
+        <div class="border rounded p-2 pb-5 bg-light visina">1</div>
+      </div>
+
+      <!-- kolona 2 -->
+      <div class="col-3 p-2">
+        <div class="border rounded p-2 pb-5 bg-light visina">2</div>
+      </div>
+
+      <!-- kolona 3 -->
+      <div class="col-3 p-2">
+        <div class="border rounded p-2 pb-5 bg-light visina">3</div>
+      </div>
+
+      <!-- NESTOVANJE -->
+      <!-- kolona 4 -->
+      <div class="col-3 p-2">
+        <!-- ubacujemo row u kolonu, pa u taj row jos 2 kolone: kolonu 4 i kolonu 5 -->
+        <div class="row g-2">
+          <!-- kolona 4 -->
+          <div class="col-12">
+            <div class="border rounded bg-light p-3">4</div>
+          </div>
+          <!-- kolona 5 -->
+          <div class="col-12">
+            <div class="border rounded bg-light p-3">5</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+
+    <!-- drugi red -->
+    <div class="row gb-1">
+      <!-- kolona 6 -->
+      <div class="col-6 p-2">
+        <div class="border rounded p-2 pb-3 bg-light">6</div>
+      </div>
+      <!-- kolona 7 -->
+      <div class="col-6 p-2">
+        <div class="border rounded p-2 pb-3 bg-light">7</div>
+      </div>
+    </div>
+
+
+
+    <!-- treci red -->
+    <div class="row gb-1">
+      <!-- kolona 8 -->
+      <div class="col-12 p-2">
+        <div class="border rounded p-2 pb-5 bg-light visina">8</div>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+
+</html>

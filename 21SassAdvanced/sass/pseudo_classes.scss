@@ -1,0 +1,21 @@
+// Using Pseudo-classes in SASS
+// ●	Create a page that contains a list of four links to local newspapers
+// ●	Create a sass file that removes underlines from all links and that sets the background color of active links to yellow, visited links to orange and links that is not yet clicked to green; links of a class ‘important’ should be written using bold letters
+
+a {
+  text-decoration: none;
+
+  &:active {
+    background-color: yellow;
+  }
+
+  &:visited {
+    background-color: orange;
+  }
+  background-color: green;
+  
+}
+
+.important {
+  font-weight: bold;
+}

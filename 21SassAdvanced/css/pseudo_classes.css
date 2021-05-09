@@ -1,0 +1,16 @@
+a {
+  text-decoration: none;
+  background-color: green;
+}
+
+a:active {
+  background-color: yellow;
+}
+
+a:visited {
+  background-color: orange;
+}
+
+.important {
+  font-weight: bold;
+}
