@@ -1,0 +1,14 @@
+.navbar {
+  background-color: $color-nav-bg;
+  button {
+    background-color: $color-button-bg;
+
+    @media (min-width: 768px) {
+      background-color: $color-nav-bg;
+    }
+  }
+
+  .navbar-brand, a {
+    font-family: $font-bold;
+  }
+}

@@ -1,0 +1,29 @@
+body {
+  font-family: $font-regular;
+ }
+
+h1, h2, h4 {
+  font-family: $font-bold;
+}
+
+.star {
+  display: inline-block;
+  margin: 0 1rem;
+}
+
+.left-line,
+.right-line {
+  display: inline-block;
+  width: 10%;
+  height: 0.3rem;
+  border-top: 3px solid $color-light;
+}
+
+.portfolio, .contact {
+  .left-line, .right-line {
+    border-color: black;
+  }
+}
+
+
+

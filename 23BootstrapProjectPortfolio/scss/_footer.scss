@@ -1,0 +1,16 @@
+.footer {
+  color: $color-light;
+  background-color: $color-nav-bg;
+  svg {
+    border: 2px solid $color-light;
+    border-radius: 50%;
+    background-color: $color-nav-bg;
+    padding: 3px;    
+  }
+  
+}
+
+.copyright {
+  background-color: $color-nav-bg;
+}
+
