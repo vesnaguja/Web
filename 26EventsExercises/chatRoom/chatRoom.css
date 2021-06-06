@@ -7,7 +7,6 @@ body {
   background-color: lightgray;
 }
 
-
 .chat-area {
   height: 80vh;
   background-color: white;
@@ -15,24 +14,37 @@ body {
   margin: auto;
   overflow: scroll;
   margin-top: 5vh;
+  
 }
 
 .message-container {
-  background-color: rgb(133, 227, 243);
+  /* background-color: rgb(133, 227, 243); */
+  display: flex;
+  justify-content: space-between;
   margin: 1rem;
-  padding: 0.05rem 1rem;
-  border-radius: 1rem;
- 
-}
-.message-text {
-font-size: 20px;
+  padding: 0.2rem 1rem;
+  border-bottom: 1px solid rgb(190, 190, 190);
 }
 
+.text-container {
+  display: inline-block;
+  background-color: rgb(195, 244, 253);
+  border-radius: 0.5rem;
+  padding: 0 2rem;
+}
+
+
 .time-container {
-text-align: right;
+  display: flex;
+  text-align: right;
+}
+
+.message-text {
+  font-size: 20px;
 }
 
 .message-time {
+  align-self: flex-end;
   font-size: 15px;
   color: grey;
 }
@@ -41,11 +53,11 @@ text-align: right;
   width: 80%;
   margin: 20px auto;
   display: flex;
-  justify-content: space-between;  
+  justify-content: space-between;
 }
 
 #message {
- width: 65%;
+  width: 65%;
   padding: 10px;
   border: none;
   border-radius: 5px;
@@ -61,4 +73,3 @@ text-align: right;
   font-weight: 600;
   font-size: 18px;
 }
-

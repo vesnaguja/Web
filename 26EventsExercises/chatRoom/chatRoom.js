@@ -14,7 +14,8 @@ function appendMessage() {
   var day = new Date();
   var hours = day.getHours();
   var minutes = day.getMinutes();
-  var currentTime = hours + ':' + minutes;
+
+  var currentTime = hours + ':' + (minutes > 9 ? minutes : '0' + minutes);
   // create new message bubble
   var newMessage = messageBubble(messageElement.value, currentTime);
 

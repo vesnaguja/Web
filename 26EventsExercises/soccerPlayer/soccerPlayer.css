@@ -1,0 +1,23 @@
+
+.field {
+  position: relative;
+  background-image: url(./images/field.png);
+  background-repeat: no-repeat; 
+  height: 372px;
+  width: 594px;
+}
+
+.btn-stop-moving {
+  position: absolute;
+  bottom: 3px;
+  right: 3px;
+  background-color: red;
+  border: none;
+  color: white;
+  padding: 5px;
+}
+
+.player {
+  position: absolute;
+  width: 8%;
+}
