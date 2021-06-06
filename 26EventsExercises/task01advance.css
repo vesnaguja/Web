@@ -17,18 +17,16 @@ button {
   -webkit-box-shadow: 0px 9px 9px 2px grey;
   box-shadow: 0px 9px 9px 2px grey;
   color: white;
+  border: none;
 }
 
 .button-1 {
   margin-bottom: 50px;
-  background-color: brown;
-  border: brown;
-  
+  background-color: brown;  
 }
 
 #automatic {
-  background-color: rgb(19, 111, 128);
-  border: rgb(19, 111, 128);  
+  background-color: rgb(19, 111, 128); 
 }
 
 .bg-color {

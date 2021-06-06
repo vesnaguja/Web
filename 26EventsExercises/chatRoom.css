@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: lightgray;
+}
+
+
+.chat-area {
+  height: 80vh;
+  background-color: white;
+  width: 80%;
+  margin: auto;
+  overflow: scroll;
+  margin-top: 5vh;
+}
+
+.message-container {
+  background-color: rgb(133, 227, 243);
+  margin: 1rem;
+  padding: 0.05rem 1rem;
+  border-radius: 1rem;
+ 
+}
+.message-text {
+font-size: 20px;
+}
+
+.time-container {
+text-align: right;
+}
+
+.message-time {
+  font-size: 15px;
+  color: grey;
+}
+
+.form {
+  width: 80%;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;  
+}
+
+#message {
+ width: 65%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+#button {
+  background-color: purple;
+  width: 33%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: 600;
+  font-size: 18px;
+}
+
