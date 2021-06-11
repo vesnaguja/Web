@@ -1,0 +1,48 @@
+* {
+  font-family: sans-serif;
+  background-color: mintcream;
+}
+
+h1,
+p {
+  color: forestgreen;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 0;
+}
+
+#gallery-section {
+  padding: 0 5vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.preview {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1vh;
+}
+
+.preview-img {
+  height: 50vh;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.red-border {
+  border: 1px red solid;
+}
+
+
+#img-1:hover,  #img-2:hover,#img-3:hover,#img-4:hover,#img-5:hover,#img-6:hover{
+  cursor: pointer; 
+  opacity: 0.7;
+  transition: all ease-in-out 100ms;
+}
