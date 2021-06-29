@@ -1,5 +1,4 @@
 var buttonElement = document.querySelector('#button');
-var previousPuppy = document.querySelector('#previous-puppy');
 var dogDiv = document.querySelector('#dog');
 var dogs = [];
 var buttonNames = ['another puppy', 'give me puppy', 'one more puppy', 'new puppy'];

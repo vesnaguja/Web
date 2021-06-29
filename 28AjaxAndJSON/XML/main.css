@@ -1,0 +1,44 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 5rem;
+  background-color: aliceblue;
+  height: 100vh;
+}
+
+h2 {
+  color: blue;
+}
+
+.label {
+  color: blue; 
+  padding: 10px;
+}
+
+#searchIP {
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+#button {
+  padding: 10px 50px;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  background-color: blue;
+}
+
+#country {
+  color: blue;
+  font-size: 2rem;
+}

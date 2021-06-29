@@ -1,20 +1,29 @@
+var countryElement = document.querySelector('#country');
+var buttonElement = document.querySelector('#button');
+var inputElement = document.querySelector('#searchIP');
+var inputValue = inputElement.value;
 
-
-function handlerFunction() {
+function getCountry() {
  
-  var xhr = new XMLHttpRequest();
-  xhr.open('GET', 'http://www.geoplugin.net/xml.gp?ip=87.116.161.143', true);
+  var request = new XMLHttpRequest();
+  request.open('GET', 'http://www.geoplugin.net/xml.gp?ip=' + inputElement.value);
 
-  xhr.onload = function () {
-    if(this.status === 200) {
-      console.log('Hello');
+  request.onload = function () {
+
+    if (request.status >= 200 && request.status < 300) {
+      var response = request.responseXML;
+      var country = response.querySelector("geoplugin_countryName").textContent;
+      countryElement.textContent = country;
+
     }
   }
-  xhr.send();
+  request.send();
 
 }
 
 
 
 
-window.addEventListener('load', handlerFunction);
+
+buttonElement.addEventListener('click', getCountry)
+//window.addEventListener('load', getCountry);

@@ -1,0 +1,44 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  background-color: rgb(247, 246, 246);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 8rem;
+}
+
+.search {
+  border-radius: 10px;
+  width: 30vw;
+  padding: 0.5rem 1rem;
+  border-color: lightgray;
+}
+
+#profile {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 2rem 8rem;
+}
+.container {
+  display: grid;
+  align-items: center;
+  background-color: white;
+  width: 20vw;
+  padding: 3px;
+}
+
+.profile-img {
+  width: 100%;
+}
+
+.ime {
+  width: 100%;
+  background-color: white;
+  text-align: center;
+  padding: 5px;
+}

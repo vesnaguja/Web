@@ -20,9 +20,9 @@ var images2 = [4, 5, 6].map(function (num) {
 $(gallery2).append(images2);
 
 $(function () {
-  selectedImg = $('.selected').removeClass('selected');
-  gallery1 = $(selectedImg).parent();
-  gallery2 = $(gallery1).next();
+  selectedImg.removeClass('selected');
+  gallery1 = selectedImg.parent();
+  gallery2 = gallery1.next();
   var middle = Math.ceil($(images2).length / 2);
   var middleImg = $(gallery2).children('img:nth-child(' + middle + ')').addClass('selected');
 });
