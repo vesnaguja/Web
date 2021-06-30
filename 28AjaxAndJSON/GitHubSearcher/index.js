@@ -1,11 +1,13 @@
-$('#search-user').on('keyup', function (e) {
+var request = $('#search-user').on('keyup', function (e) {
   if (e.key === 'Enter') {
-    var userName = e.target.value;
+    var inputSearch = e.target.value;
     //console.log(userName);
 
-    $.ajax({
-      url: 'https://api.github.com/search/users?q=' + userName + '&per_page=20'
-    }).done(function (response) {
+    var request = $.ajax({
+      url: 'https://api.github.com/search/users?q=' + inputSearch + '&per_page=20'
+    })
+
+    request.done(function (response) {
       // ako korisnik nema ime (ime mu je null) stavi da default bude 'user pa broj usera'
 
       // da pocistim listu
@@ -22,19 +24,20 @@ $('#search-user').on('keyup', function (e) {
     })
 
   }
- 
+
 })
 
 
-// $('#profile').on('click', function () {
-  
-//   $.ajax({
-//     url: 'https://api.github.com/search/users?q=' + item + '&per_page=20'
-//   }).done(function (response) {
-//     $('#profile').append(`
-//     <a href="${item.url}" target="_blank"></a>
-//   `)
 
 
-//   })
-// })
+
+$('#profile').on('click', function (event) {
+  $('.new-content').append(`
+  <p>Bla Bla</p>
+  `)
+ 
+
+ 
+
+
+})

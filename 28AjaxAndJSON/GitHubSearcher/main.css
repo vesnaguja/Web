@@ -9,36 +9,71 @@
 .header {
   display: flex;
   justify-content: space-between;
-  padding: 2rem 8rem;
+  padding: 2rem 10%;
+  background-color: rgb(50, 50, 50);
+}
+.logo {
+  display: flex;
+  background-color: rgb(50, 50, 50);
+}
+#icon {
+  width: 50px;
+  margin-right: 1%;
+}
+
+h2 {
+  background-color: rgb(50, 50, 50);
+  color: white;
+  align-self: center;
 }
 
 .search {
-  border-radius: 10px;
-  width: 30vw;
-  padding: 0.5rem 1rem;
-  border-color: lightgray;
+  border-radius: 20px;
+  width: 30%;
+  border-color: rgb(50, 50, 50);
+  padding: 0 10px 0 30px;
+  font-size: 14px;
+  background-image: url(./images/lupa.png);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-color: white;
 }
+
+.search:focus {
+ 
+}
+
+.new-content {
+  background-color: lightgray;
+  padding: 2rem 10% 0 10%;
+}
+
+
 
 #profile {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  padding: 2rem 8rem;
+  padding: 2rem 10%;
+  gap: 2vw;
+  background-color: lightgray;
 }
 .container {
   display: grid;
   align-items: center;
   background-color: white;
-  width: 20vw;
-  padding: 3px;
+  padding: 10px;
+  border: none;
 }
 
 .profile-img {
   width: 100%;
+  border-radius: 15px;
 }
 
 .ime {
   width: 100%;
   background-color: white;
-  text-align: center;
-  padding: 5px;
+  line-height: 2.5rem;
+  height: 2rem;
+  text-align: center;  
 }
