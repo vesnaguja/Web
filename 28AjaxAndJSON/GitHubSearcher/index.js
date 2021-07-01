@@ -1,5 +1,7 @@
 var request = $('#search-user').on('keyup', function (e) {
   if (e.key === 'Enter') {
+    clearReposTable();
+
     var inputSearch = e.target.value;
     //console.log(userName);
 
@@ -12,32 +14,79 @@ var request = $('#search-user').on('keyup', function (e) {
 
       // da pocistim listu
       $('#profile').html('');
+      //console.log(response.items);
 
       response.items.forEach(function (item) {
         $('#profile').append(`
-           <div class="container">
-           <img src="${item.avatar_url}" class="profile-img">
-           <p class="ime">${item.login}</p>
+           <div class="container" data-user="${item.login}">
+            <img src="${item.avatar_url}" class="profile-img" data-user="${item.login}">
+            <p class="ime" data-user="${item.login}">${item.login}</p>
            </div>`)
       })
+    })
+  }
+})
+
+function clearReposTable() {
+  $('.repositories-of-selected-user').html('');
+}
+
+$(document).on('click', '.container', function (e) {
+
+  clearReposTable();
+
+  var user = e.target.dataset.user;
+
+  var request = $.ajax({
+    url: 'https://api.github.com/users/' + user + '/repos'
+  });
+
+  request.done(function (response) {
+    //console.log(response);
+    $('.repositories-of-selected-user').append(`
+    <div class="repository-table table-header table-cell">
+    
+    <div>Repository name</div>
+    <div>Repository image</div>
+    <div>Description</div>
+    <div>Number of stars</div>
+    <div>Languages on repository</div>
+   
+    </div>`)
+
+
+    response.forEach(function (repository) {
+
+      var request = $.ajax({
+        url: repository.languages_url
+      });
+
+      var languages = []
+
+      request.done(function(response) {
+
+        languages.push(...Object.keys(response));
+
+        var name = repository.name;
+        var description = repository.description || 'No description';
+        var stars = repository.stargazers_count;
+
+        $('.repositories-of-selected-user').append(`
+  
+        <div class="repository-table table-cell">
+           
+            <div>${name}</div>
+            <div><img src="./images/repository-template.png"></div>
+            <div>${description}</div>
+            <div>${stars}</div>
+            <div>${languages.join('<br>')}</div>
+         
+         </div>`)
+
+      });
 
     })
 
-  }
+  })
 
-})
-
-
-
-
-
-$('#profile').on('click', function (event) {
-  $('.new-content').append(`
-  <p>Bla Bla</p>
-  `)
- 
-
- 
-
-
-})
+});

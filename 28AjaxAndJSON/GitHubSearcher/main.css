@@ -43,9 +43,12 @@ h2 {
  
 }
 
-.new-content {
+.repositories-of-selected-user {
   background-color: lightgray;
   padding: 2rem 10% 0 10%;
+  display: grid;
+  justify-items: center;
+  
 }
 
 
@@ -70,10 +73,49 @@ h2 {
   border-radius: 15px;
 }
 
+
+.repository-table {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  column-gap: 5px;
+  row-gap: 5px;
+  padding: 5px;
+  justify-items: center;
+
+}
+
+.table-header, .table-header div {
+  font-weight: bold;
+  color: white;
+  background-color: rgb(50, 50, 50);  
+  
+}
+
 .ime {
   width: 100%;
   background-color: white;
   line-height: 2.5rem;
   height: 2rem;
   text-align: center;  
+}
+
+
+
+.table-cell {
+  width: 100%;
+  text-align: center;  
+  
+}
+
+.table-cell div {
+  place-self: center;
+}
+
+.table-cell:nth-child(even) {
+  background-color: gray;
+}
+
+.table-cell:nth-child(even) div {
+  background-color: gray;
+  color: white;
 }
