@@ -7,12 +7,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="task01.css">
 <script>
-  function changeColor(color) {
-    document.body.style.background = color;
+
+  function changeColor(color) {   
+    // if (document.body.style.background !== color){
+    // document.body.style.background = color;
+    // } else {
+    //   document.body.style.background = '';
+    // }
+    document.body.style.background !== color ? document.body.style.background = color : document.body.style.background = '';
   }
+
 </script>
 
-  <title>Document</title>
+  <title>Toggle background</title>
 </head>
 
 <body>
