@@ -1,0 +1,29 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.field {
+  background-image: url(./images/field.png);
+  background-repeat: no-repeat;
+  height: 372px;
+  width: 594px;
+  position: relative;
+}
+
+.player {
+  width: 50px;
+  position: absolute;
+}
+
+.button {
+  position: absolute;
+  right: 3px;
+  bottom: 3px;
+  background-color: rgb(193, 57, 43);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 3px;
+}
