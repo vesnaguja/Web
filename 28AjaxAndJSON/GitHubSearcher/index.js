@@ -1,12 +1,14 @@
 var request = $('#search-user').on('keyup', function (e) {
+  
   if (e.key === 'Enter') {
     clearReposTable();
 
     var inputSearch = e.target.value;
     //console.log(userName);
+    e.target.value = '';
 
     var request = $.ajax({
-      url: 'https://api.github.com/search/users?q=' + inputSearch + '&per_page=20'
+      url:  'https://api.github.com/search/users?q=' + inputSearch + '&per_page=20'
     })
 
     request.done(function (response) {
@@ -17,15 +19,22 @@ var request = $('#search-user').on('keyup', function (e) {
       //console.log(response.items);
 
       response.items.forEach(function (item) {
+
+        var avatar = item.avatar_url || './images/placeholder-user.png'; // putanja do placeholder slike
+
         $('#profile').append(`
            <div class="container" data-user="${item.login}">
-            <img src="${item.avatar_url}" class="profile-img" data-user="${item.login}">
+            <img src="${avatar}" class="profile-img" data-user="${item.login}">
             <p class="ime" data-user="${item.login}">${item.login}</p>
            </div>`)
       })
     })
+   
   }
+  
 })
+
+
 
 function clearReposTable() {
   $('.repositories-of-selected-user').html('');
@@ -54,18 +63,19 @@ $(document).on('click', '.container', function (e) {
    
     </div>`)
 
-
     response.forEach(function (repository) {
-
       var request = $.ajax({
         url: repository.languages_url
       });
 
-      var languages = []
+      var languages = [];
 
       request.done(function(response) {
+        Object.keys(response).forEach(function (language) {
+          languages.push(language);
+        })
 
-        languages.push(...Object.keys(response));
+        // languages.push(...Object.keys(response));
 
         var name = repository.name;
         var description = repository.description || 'No description';
