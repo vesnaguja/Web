@@ -47,4 +47,4 @@ $(document).on('click', '.container', function (e) {
   // otvori novu stranu u novom tabu
   window.open('./repos.html', "_blank");
 
-});
+});                                                                                                                                                                                                                                                                                              

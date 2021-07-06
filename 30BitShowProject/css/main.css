@@ -1,0 +1,27 @@
+#navbar {
+  background-color: #343a40;
+}
+
+.navbar-brand {
+  color: white;
+}
+
+.title {
+  color: #343a40;
+  text-align: center;
+}
+
+.showTitle {
+  color: #1483ff;
+  width: 210px;
+}
+
+.img-and-title {
+  border: lightgray 2px solid;
+  padding: 0;
+}
+
+.footer {
+  background-color: #343a40;
+  color: white;
+}
