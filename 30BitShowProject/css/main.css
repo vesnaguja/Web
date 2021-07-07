@@ -8,17 +8,14 @@
 
 .title {
   color: #343a40;
-  text-align: center;
 }
 
 .showTitle {
   color: #1483ff;
-  width: 210px;
 }
 
-.img-and-title {
-  border: lightgray 2px solid;
-  padding: 0;
+.showImg {
+  width: 100%;
 }
 
 .footer {

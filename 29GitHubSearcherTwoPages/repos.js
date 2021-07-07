@@ -5,13 +5,13 @@ const usernameElement = document.querySelector('#user');
 usernameElement.textContent = user;
 
 
- const request = $.ajax({
-    url: 'https://api.github.com/users/' + user + '/repos'
-  });
+const request = $.ajax({
+  url: 'https://api.github.com/users/' + user + '/repos'
+});
 
-  request.done(function (response) {
+request.done(function (response) {
 
-    $('.repositories-of-selected-user').append(`
+  $('.repositories-of-selected-user').append(`
     <div class="repository-table table-header table-cell">
 
     <div>Repository name</div>
@@ -22,26 +22,26 @@ usernameElement.textContent = user;
 
     </div>`)
 
-    response.forEach(function (repository) {
-      var request = $.ajax({
-        url: repository.languages_url
-      });
+  response.forEach(function (repository) {
+    var request = $.ajax({
+      url: repository.languages_url
+    });
 
-      var languages = [];
+    var languages = [];
 
-      request.done(function (response) {
-        
-        Object.keys(response).forEach(function (language) {
-          languages.push(language);
-        })
+    request.done(function (response) {
 
-        // languages.push(...Object.keys(response));
+      Object.keys(response).forEach(function (language) {
+        languages.push(language);
+      })
 
-        var name = repository.name;
-        var description = repository.description || 'No description';
-        var stars = repository.stargazers_count;
+      // languages.push(...Object.keys(response));
 
-        $('.repositories-of-selected-user').append(`
+      var name = repository.name;
+      var description = repository.description || 'No description';
+      var stars = repository.stargazers_count;
+
+      $('.repositories-of-selected-user').append(`
 
         <div class="repository-table table-cell">
 
@@ -53,8 +53,8 @@ usernameElement.textContent = user;
 
          </div>`)
 
-      });
-
-    })
+    });
 
   })
+
+})

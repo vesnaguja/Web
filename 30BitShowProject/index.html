@@ -26,25 +26,25 @@
 
 <body>
 
-  <nav class="navbar" id="navbar">
-
-    <div class="container-fluid d-flex justify-content-around">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <form>
-        <input class="form-control me-2 search-show" type="search" placeholder="Search" aria-label="Search">
-      </form>
-    </div>
-  </nav>
-
-
-  <div class="container-lg d-flex flex-column">
-
-    <h2 class="title">Popular Shows</h2>
-
-    <div class="row row-cols-3 px-5 g-3" id="rowResult"></div>
-
+  <div class="container-fluid p-0">
+    <nav class="navbar navbar-expand-lg " id="navbar">
+      <div class="container">
+        <a class="navbar-brand" href="#">BitShow</a>
+        <form class="d-flex">
+          <input class="form-control" id="search-show" type="search" placeholder="Search" aria-label="Search">
+        </form>
+      </div>
+    </nav>
   </div>
 
+
+  <div class="container d-flex justify-content-center">
+    <h2 class="title p-3">Popular Shows</h2>
+  </div>
+
+  <div class="container">
+    <div class="row" id="rowResult"></div>
+  </div>
 
   <footer>
     <!-- Copyright -->
