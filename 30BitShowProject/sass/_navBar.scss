@@ -1,8 +1,28 @@
 #navbar {
   background-color: rgb(52, 58, 64);
- 
 }
 
 .navbar-brand {
   color: white;
+}
+
+// .suggestions-container {
+//   position: relative;
+
+// }
+
+.suggestions {
+  position: absolute;
+  top: 50px;
+  right: 120px;
+  color: black;
+  border: 2px lightgray solid; 
+  background-color: white;
+  width: 198px;
+  padding: 10px;
+}
+
+
+.select-suggestion {
+  border-bottom: 2px lightgray solid;
 }
