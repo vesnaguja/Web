@@ -1,12 +1,11 @@
+const suggestionDiv = document.querySelector('.suggestions');
+const searchBox = document.querySelector('#search-show');
+
 //Get the button
-let mybutton = document.getElementById("btn-back-to-top");
+const mybutton = document.getElementById("btn-back-to-top");
 
 // When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function () {
-  scrollFunction();
-};
-
-function scrollFunction() {
+window.onscroll = () => {
   if (
     document.body.scrollTop > 20 ||
     document.documentElement.scrollTop > 20
@@ -15,16 +14,13 @@ function scrollFunction() {
   } else {
     mybutton.style.display = "none";
   }
-}
-// When the user clicks on the button, scroll to the top of the document
-mybutton.addEventListener("click", backToTop);
+};
 
-function backToTop() {
+// When the user clicks on the button, scroll to the top of the document
+mybutton.addEventListener('click', () => {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
-}
-
-
+});
 
 
 const request = $.ajax({
@@ -32,112 +28,111 @@ const request = $.ajax({
 })
 
 request.done(function (response) {
-  //console.log(response);
+
   const top50 = response.sort(function (a, b) {
     return b.rating.average - a.rating.average;
   }).slice(0, 50);
-  //console.log(top50);
 
   $('#rowResult').html('');
 
   top50.forEach(function (item) {
     const poster = item.image.medium;
     const title = item.name;
-    //console.log(poster);
-
+    
     $('#rowResult').append(`
-    <div class="col-4 img-and-title" data-show="${item.id}">
-      <div class="border mb-4">
-        <img src="${poster}" class="showImg" data-show="${item.id}">
-        <p class="showTitle p-3 fw-bold" data-show="${item.id}">${title}</p>
+    <div class="col-4 img-and-title py-3" data-show="${item.id}">
+      <img src="${poster}" class="showImg card-img-top" data-show="${item.id}">
+      <div class="border card-body">       
+        <h5 class="showTitle card-title" data-show="${item.id}">${title}</h5>
       </div>
     </div>`)
   })
 })
 
 
-$(document).on('click', '.img-and-title', function (e) {
-  const show = e.target.dataset.show;
-  //console.log(show);
-  window.localStorage.clear();
-  window.localStorage.setItem('showId', show);
-  window.open('./showInfo.html', "_blank");
-})
-
-
 function searchedOrSelectedShow(e) {
- 
-  if (e.key === 'Enter' ) {
+  if (e.key === 'Enter') {
     e.preventDefault();
 
     const inputSearch = e.target.value;
     e.target.value = '';
 
-
     const request = $.ajax({
-      url: ' http://api.tvmaze.com/search/shows?q=' + inputSearch
+      url: ' http://api.tvmaze.com/search/shows?q=' + inputSearch.trim()
     })
 
     request.done(function (response) {
-      // window.localStorage.clear();
-      // window.localStorage.setItem('showId', response[0].show.id)
-      // window.open('./showInfo.html', "_blank");
+
       $('#rowResult').html('');
 
       response.forEach(function (item) {
-        const poster = item.show.image.medium;
-        const title = item.show.name;
-        //console.log(poster);
+        // console.log(item);
 
-        $('#rowResult').append(`
-        <div class="col-4 img-and-title" data-show="${item.show.id}">
-          <div class="border mb-4">
-            <img src="${poster}" class="showImg" data-show="${item.show.id}">
-            <p class="showTitle p-3 fw-bold" data-show="${item.show.id}">${title}</p>
-          </div>
-        </div>`)
+        if (item.show) {
+          const poster = (item.show.image) ? item.show.image.medium : './images/300.png';
+          const title = item.show.name;
+
+          $('#rowResult').append(`
+          <div class="col-4 img-and-title " data-show="${item.show.id}">
+            <div class="border mb-4">
+              <img src="${poster}" class="showImg" data-show="${item.show.id}">
+              <p class="showTitle p-3 fw-bold" data-show="${item.show.id}">${title}</p>
+            </div>
+          </div>`)
+        }
 
       })
     })
-  } else {
+  } else if (e.key !== 'Escape') {
     const inputSearch = e.target.value;
+
     const request = $.ajax({
-      url: ' http://api.tvmaze.com/search/shows?q=' + inputSearch
+      url: ' http://api.tvmaze.com/search/shows?q=' + inputSearch.trim()
     })
 
     request.done(function (response) {
       $('.suggestions').html('');
-     console.log(response);
-      response.forEach(function (item) {
-        const title = item.show.name;
 
-        $('.suggestions').append(`
-        <p class="select-suggestion" data-show="${item.show.id}">${title}</p>
-        `)      
-      })      
-    })   
+      // position suggestions div
+      suggestionDiv.style.top = e.target.offsetTop + e.target.offsetHeight + 'px';
+      suggestionDiv.style.left = e.target.offsetLeft + 'px';
+
+      // fill suggestions div
+      response.forEach(function (item) {
+        const show = item.show;
+        $('.suggestions').append(`<p class="select-suggestion" data-show="${show.id}">${show.name}</p>`)
+      })
+
+      // show suggestions div
+      suggestionDiv.style.display = 'block';
+    })
   }
 }
 
-$(document).on('click', '.suggestions',function (e) {
-  const show = e.target.dataset.show;
-console.log(show);
+function toLS(e) {
+  var show = e.target.dataset.show;
   window.localStorage.clear();
   window.localStorage.setItem('showId', show);
-  window.open('./showInfo.html', "_blank");
-
-})
-
-$(document).on('click', '.img-and-title', function (e) {
-  const show = e.target.dataset.show;
-
-  window.localStorage.clear();
-  window.localStorage.setItem('showId', show);
-  window.open('./showInfo.html', "_blank");
-
-})
+  window.open('./showInfo.html', "_self");
+}
 
 
-$('#search-show').on('keydown', searchedOrSelectedShow);
+$(document).on('click', '.suggestions', e => toLS(e));
 
-$('.select-suggestion').on('click', searchedOrSelectedShow);
+$(document).on('click', '.img-and-title', e => toLS(e));
+
+$('#search-show').on('keyup', searchedOrSelectedShow);
+
+
+$('body').on('click', () => {
+  suggestionDiv.style.display = 'none';
+});
+$(document).on('keydown', () => {
+  suggestionDiv.style.display = 'none';
+});
+
+
+// window.onload = function () {
+//   document.getElementById("spinner").classList.remove("d-flex");
+//   document.getElementById("spinner").classList.add("hidden-results");
+// };

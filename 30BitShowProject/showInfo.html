@@ -20,7 +20,7 @@
 
   <script src="./showInfo.js" defer></script>
 
-  <title>Document</title>
+  <title>Show Info</title>
 </head>
 
 <body>
@@ -28,8 +28,9 @@
   <div class="container-fluid p-0">
     <nav class="navbar  navbar-expand-lg" id="navbar">
       <div class="container">
-        <a class="navbar-brand" href="./index.html">BitShow</a>
-        <form class="d-flex">
+        <a class="navbar-brand" href="./index.html" target="_self">BitShow</a>
+
+        <form class="d-flex" autocomplete="off" onsubmit="return false;">
 
           <div class="suggestions"></div>
 
@@ -41,15 +42,14 @@
 
   <div class="container  d-flex justify-content-center">
     <div class="showTitle">
-
     </div>
   </div>
 
 
   <div class="container">
     <div class="row">
-      <div class="col-7 posterImg"></div>
-      <div class="col-5">
+      <div class="col-4 posterImg"></div>
+      <div class="col-6">
         <h3>Seasons <span class="numOfSeasons"></span></h3>
         <ul class="seasons"></ul>
 
@@ -69,7 +69,7 @@
 
   <footer>
     <!-- Copyright -->
-    <div class="text-center p-4 footer">
+    <div class="text-center p-2 footer">
       Copyright © Bit Student 2021
     </div>
     <!-- Copyright -->
