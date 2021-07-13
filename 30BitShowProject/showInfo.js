@@ -8,9 +8,9 @@ var request = $.ajax({
 })
 
 request.done(function (response) {
-  const poster = (response.image) ? response.image.medium : './images/300.png';
+  const poster = (response.image) ? response.image.original : './images/300.png';
   $('.showTitle').append(`<h2 class="title p-3">${response.name}</h2>`)
-  $('.posterImg').append(`<img src="${poster}" class="w-100">`)
+  $('.posterImg').append(`<img src="${poster}" class="img-fluid pb-3">`)
   $('.showDetails').append(`<p>${response.summary}</p>`)
 })
 
@@ -33,7 +33,7 @@ var request = $.ajax({
 })
 
 request.done(function (response) {
-  response.forEach(function (cast) {
+  response.slice(0, 10).forEach(function (cast) {
     $('.cast').append(`<li>${cast.person.name}</li>`)
   })
 })
@@ -50,9 +50,9 @@ function searchedOrSelectedShow(e) {
     })
 
     request.done(function (response) {
-      const poster = (response.image) ? response.image.medium : './images/300.png';
+      const poster = (response.image) ? response.image.original : './images/300.png';
       $('.showTitle').append(`<h2 class="title p-3">${response.name}</h2>`)
-      $('.posterImg').append(`<img src="${poster}" class="w-100">`)
+      $('.posterImg').append(`<img src="${poster}">`)
       $('.showDetails').append(`<p>${response.summary}</p>`)
     })
 

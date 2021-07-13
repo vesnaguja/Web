@@ -28,10 +28,6 @@
   color: #1483ff;
 }
 
-.showImg {
-  width: 100%;
-}
-
 #btn-back-to-top {
   position: fixed;
   bottom: 20px;
@@ -42,6 +38,10 @@
 
 body {
   margin-bottom: 40px;
+}
+
+.hidden-results {
+  display: none;
 }
 
 .footer {

@@ -19,7 +19,7 @@ request.done(function (response) {
     
     $('#rowResult').append(`
     <div class="col-4 img-and-title py-3" data-show="${item.id}">
-      <img src="${poster}" class="showImg card-img-top" data-show="${item.id}">
+      <img src="${poster}" class="showImg img-fluid card-img-top" data-show="${item.id}">
       <div class="border card-body">       
         <h5 class="showTitle card-title" data-show="${item.id}">${title}</h5>
       </div>
@@ -36,7 +36,7 @@ function searchedOrSelectedShow(e) {
     e.target.value = '';
 
     const request = $.ajax({
-      url: ' http://api.tvmaze.com/search/shows?q=' + inputSearch.trim()
+      url: 'http://api.tvmaze.com/search/shows?q=' + inputSearch.trim()
     })
 
     request.done(function (response) {
@@ -53,7 +53,7 @@ function searchedOrSelectedShow(e) {
           $('#rowResult').append(`
           <div class="col-4 img-and-title " data-show="${item.show.id}">
             <div class="border mb-4">
-              <img src="${poster}" class="showImg" data-show="${item.show.id}">
+              <img src="${poster}" class="showImg img-fluid" data-show="${item.show.id}">
               <p class="showTitle p-3 fw-bold" data-show="${item.show.id}">${title}</p>
             </div>
           </div>`)
@@ -110,7 +110,7 @@ $(document).on('keydown', () => {
 });
 
 
-// window.onload = function () {
-//   document.getElementById("spinner").classList.remove("d-flex");
-//   document.getElementById("spinner").classList.add("hidden-results");
-// };
+window.onload = function () {
+  document.getElementById("spinner").classList.remove("d-flex");
+  document.getElementById("spinner").classList.add("hidden-results");
+};
